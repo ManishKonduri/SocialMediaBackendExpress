@@ -1,6 +1,6 @@
 const mongo = require('mongoose');
 
-mongo.connect('mongodb://localhost:27017/reactdb', {
+mongo.connect('mongodb+srv://manishkonduri:manish145@reactdb.6tf2j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
 
     useNewUrlParser: true,
     useCreateIndex: true,
