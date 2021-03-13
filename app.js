@@ -79,11 +79,11 @@ wsServer.on('request', function(request) {
 });
 
 const app = express();
-const port = 4000;
+const port = process.env.port || 4000;
 app.use(cors());
 app.use(body.json());
 
 
 app.use('/',router);
 
-app.listen(4000);
+app.listen(port);
