@@ -8,6 +8,8 @@ const webSocketsServerPort = process.env.port || 8000;
 const webSocketServer = require('websocket').server;
 const http = require('http');
 
+console.log(webSocketsServerPort)
+
 const server = http.createServer();
 server.listen(webSocketsServerPort);
 const wsServer = new webSocketServer({
