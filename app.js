@@ -4,7 +4,7 @@ const body = require('body-parser');
 const cors = require('cors');
 
 
-const webSocketsServerPort = 8000;
+const webSocketsServerPort = process.env.port || 8000;
 const webSocketServer = require('websocket').server;
 const http = require('http');
 
